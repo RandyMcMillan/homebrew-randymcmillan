@@ -5,17 +5,17 @@ class MempoolSpace < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.4/mempool_space-aarch64-apple-darwin.tar.xz"
-      sha256 "cc4d53b60ffc7a819c574b7f5a706d5c653b35e9a89b2570a6b8b805d7dcb6e4"
+      sha256 "e6ab92ae6892323363b27ef5c750b4057586fbba38d499c50e7ea4d57e43122e"
     end
     if Hardware::CPU.intel?
       url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.4/mempool_space-x86_64-apple-darwin.tar.xz"
-      sha256 "d349a6e40741028add486cdc54aa6e9b2b590bb4dd937cfd5a92bf98010292d1"
+      sha256 "4f3dd134d6534887b65da52ec74bedddc395a3e09fd2588cf3ffd7d1c8dfc703"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.4/mempool_space-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "45290eb189e3c4a0f7a7343cb809465d501e2d8f76a9e35c628988f861995a86"
+      sha256 "d312ee1d21a535a9df0db367a108a5ebb5ef3be3cd41230e2cf778d2ac56dac0"
     end
   end
   license "MPL-2.0"
