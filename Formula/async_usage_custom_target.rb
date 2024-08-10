@@ -1,21 +1,21 @@
 class AsyncUsageCustomTarget < Formula
   desc "Example: async usage of mempool_space with custom target"
   homepage "https://github.com/randymcmillan/mempool_space"
-  version "0.0.9"
+  version "0.0.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.9/async_usage_custom_target-aarch64-apple-darwin.tar.xz"
-      sha256 "5147bbcba2ba71bcf5922c5484b5845ba05f8718a89dce8bb4507e2a31f54609"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.11/async_usage_custom_target-aarch64-apple-darwin.tar.xz"
+      sha256 "394384172fa792cac17048d4d0450ce3c5ec25ee27db1e393bd04e7b5482ea2a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.9/async_usage_custom_target-x86_64-apple-darwin.tar.xz"
-      sha256 "7a0508a7bfe1f4df1e0ed1441f5fc4d0d9465dcd1977160e531ec0e42befcecd"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.11/async_usage_custom_target-x86_64-apple-darwin.tar.xz"
+      sha256 "51e977f259259fad73cb06badf1cac1e003f171bb868e8241597fa69bc706468"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.9/async_usage_custom_target-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1b04ed9ff2f31f678a3f1349eab8ca28301b6d703807cff6e8632bca984c33c1"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.11/async_usage_custom_target-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7acfff6171937860ecc76a3895e9d00cfabd31633f2dcd2d21609b0099ea0206"
     end
   end
   license "MPL-2.0"
