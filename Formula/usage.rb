@@ -1,26 +1,26 @@
 class Usage < Formula
   desc "Example: usage of mempool_space"
   homepage "https://github.com/randymcmillan/mempool_space"
-  version "0.0.15"
+  version "0.0.26"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.15/usage-aarch64-apple-darwin.tar.xz"
-      sha256 "cf0c32e4b87885daf479b40770f66dc0f56227b3fa363a94349a24c70d596353"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.26/usage-aarch64-apple-darwin.tar.xz"
+      sha256 "4f2ec980681f3cced5c1b4c8112fbc22e86d466f0bf2a4f63566bfa60381d728"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.15/usage-x86_64-apple-darwin.tar.xz"
-      sha256 "80cfbed8c2d3308a708f300b296b3134f4918051098d896eb9f80b7f954d20ed"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.26/usage-x86_64-apple-darwin.tar.xz"
+      sha256 "18a35b67426bb31e0acff421d8d21db1f5e5207147fcfa74039ae17ca822ff08"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.15/usage-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "dc0ec3d2dc34f831e8564c41c8bfe98618a2f37a3f18b53060085f7e603704f4"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.26/usage-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7cda24a09135993e6ac9e895432c3b08f243f4d952947f5a130f2fa11fc07325"
     end
   end
   license "MPL-2.0"
 
-  BINARY_ALIASES = {"aarch64-apple-darwin": {}, "x86_64-apple-darwin": {}, "x86_64-pc-windows-gnu": {}, "x86_64-unknown-linux-gnu": {}, "x86_64-unknown-linux-musl-dynamic": {}, "x86_64-unknown-linux-musl-static": {}}
+  BINARY_ALIASES = {"aarch64-apple-darwin": {}, "x86_64-apple-darwin": {}, "x86_64-unknown-linux-gnu": {}, "x86_64-unknown-linux-musl-dynamic": {}, "x86_64-unknown-linux-musl-static": {}}
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
