@@ -1,26 +1,26 @@
 class AsyncUsageCustomTarget < Formula
   desc "Example: async usage of mempool_space with custom target"
   homepage "https://github.com/randymcmillan/mempool_space"
-  version "0.0.15"
+  version "0.0.26"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.15/async_usage_custom_target-aarch64-apple-darwin.tar.xz"
-      sha256 "9c06314fa24e4346263f2c3429b1a974191204ef2f9a6ae6dc214b502b945c53"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.26/async_usage_custom_target-aarch64-apple-darwin.tar.xz"
+      sha256 "b07e7a9ac95f4802ccbb239acd1e1ca8026177599d2550acdab1ea0ebbf1bf95"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.15/async_usage_custom_target-x86_64-apple-darwin.tar.xz"
-      sha256 "b3541f77f8c2721f6166462af079ea8dcd628f062a473fbe6ddb8e59b94bca7c"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.26/async_usage_custom_target-x86_64-apple-darwin.tar.xz"
+      sha256 "8963fece3e6552e07efda1f9a020b2269d546f686d605055ee64c6687570ab63"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.15/async_usage_custom_target-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a8342ddb4e4c2de845e438ddccd599cdb5f879003c299e24cfd185addd86b8a4"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.26/async_usage_custom_target-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "dddff86358b108eb212bcbad4010aa7fca7a72b9742735d618a55b748a1392dd"
     end
   end
   license "MPL-2.0"
 
-  BINARY_ALIASES = {"aarch64-apple-darwin": {}, "x86_64-apple-darwin": {}, "x86_64-pc-windows-gnu": {}, "x86_64-unknown-linux-gnu": {}, "x86_64-unknown-linux-musl-dynamic": {}, "x86_64-unknown-linux-musl-static": {}}
+  BINARY_ALIASES = {"aarch64-apple-darwin": {}, "x86_64-apple-darwin": {}, "x86_64-unknown-linux-gnu": {}, "x86_64-unknown-linux-musl-dynamic": {}, "x86_64-unknown-linux-musl-static": {}}
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
