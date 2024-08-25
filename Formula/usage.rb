@@ -1,21 +1,21 @@
 class Usage < Formula
   desc "Example: usage of mempool_space"
   homepage "https://github.com/randymcmillan/mempool_space"
-  version "0.0.33"
+  version "0.0.34"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.33/usage-aarch64-apple-darwin.tar.xz"
-      sha256 "6628c2957d38f06f6ad2edeb69cad594b8dc1c21883afef68b58d27563765b66"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.34/usage-aarch64-apple-darwin.tar.xz"
+      sha256 "33f5bb2de7622d76527ff44dc953d8ec61f80479fd1b88c242bf95a01e88e669"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.33/usage-x86_64-apple-darwin.tar.xz"
-      sha256 "461905b62c9e0616e1556b53bb29b0fe84ee6142fc65b741a44ab66f570925d2"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.34/usage-x86_64-apple-darwin.tar.xz"
+      sha256 "86360223ea162c0fd14e6548622fccffbcd67c074329b64c341f1552b0963cfb"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.33/usage-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a8a84bdaadd1e56e0cf5c470755747bd2f87e5cba3e8c74ca710ff205e0bcdd7"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.34/usage-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6c53365ebe4635098af033b5a0f0ca1f2e994a4dee3c03e61bc39f73d10d0a47"
     end
   end
   license "MPL-2.0"
