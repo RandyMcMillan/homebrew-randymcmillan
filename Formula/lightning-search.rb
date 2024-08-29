@@ -1,21 +1,21 @@
 class LightningSearch < Formula
   desc "lightning-search <searchText>"
   homepage "https://github.com/randymcmillan/mempool_space.git"
-  version "0.0.39"
+  version "0.0.40"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.39/lightning-search-aarch64-apple-darwin.tar.xz"
-      sha256 "d250f5358eb32c9f6bbe27e88a796bb61a854e50089ed2d5b863eb642184d336"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.40/lightning-search-aarch64-apple-darwin.tar.xz"
+      sha256 "c0adb34fabd8bd154f45d08df36e49044ee22e9947475edf45c6a21842bca8b1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.39/lightning-search-x86_64-apple-darwin.tar.xz"
-      sha256 "20575758725200954fe759a1a2aaf3ad20e920d089472f5a8b34084753bf43e1"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.40/lightning-search-x86_64-apple-darwin.tar.xz"
+      sha256 "4931f20fc9051d7e23a5226ec394afaa3581d1382e3fdd355fa19115bdfb78a1"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.39/lightning-search-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9a2f4455141671636663b85cd3d0b7a44ca1f3fa986af891241ad46e0f9bb89d"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.40/lightning-search-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4a56307a28e664c0d565c99e1b074d70279d0ffa8b1f0e69dd5eaa2fc8f1680d"
     end
   end
   license "MIT"
