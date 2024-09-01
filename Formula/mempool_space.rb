@@ -1,21 +1,21 @@
 class MempoolSpace < Formula
   desc "mempool.space api interface."
   homepage "https://github.com/randymcmillan/mempool_space"
-  version "0.0.45"
+  version "0.0.46"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.45/mempool_space-aarch64-apple-darwin.tar.xz"
-      sha256 "335e1b75cb92e5253d062ea4b08200580b6bdb9531061e10c1ec34902d4e550e"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.46/mempool_space-aarch64-apple-darwin.tar.xz"
+      sha256 "5c92f3d279bec6d45d2e2b42699c643af14dd53e6d352bf0706df6e5a3dc189b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.45/mempool_space-x86_64-apple-darwin.tar.xz"
-      sha256 "e96d1cd100c820dada56f92301e0e3d45471021428f05787e14c4b4c12bb5c69"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.46/mempool_space-x86_64-apple-darwin.tar.xz"
+      sha256 "853709c08120ec735b5d63332bfcff9fa7a1f4c2a75c5dea37d752d3e7c0a6eb"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.45/mempool_space-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a1997b33f262c2aebb2ace6874e414cd540f10fe51240da77b7c3680541990db"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.46/mempool_space-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cbeaa297ad649aa9ae80b9f4faae7204e8fb842696ca6f61f5df873a61d496a4"
     end
   end
   license "MIT"
