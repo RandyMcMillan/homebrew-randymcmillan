@@ -1,26 +1,26 @@
 class MempoolSpaceDashboard < Formula
-  desc "The mempool-space_dashboard application"
+  desc "mempool.space api interface."
   homepage "https://github.com/randymcmillan/mempool_space"
-  version "0.0.42"
+  version "0.0.45"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.42/mempool-space_dashboard-aarch64-apple-darwin.tar.xz"
-      sha256 "59db18524aab1246eeea52a0033bacfb4e7d85c3e3c32dc732b40e53a7dcdc06"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.45/mempool-space_dashboard-aarch64-apple-darwin.tar.xz"
+      sha256 "4f573ec7adee2a486ae4c5583985522763452b58ba5d59782f1c033b561b10ad"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.42/mempool-space_dashboard-x86_64-apple-darwin.tar.xz"
-      sha256 "bb695871a5122c8ad06e3dd76cf3d98832ba76c8e7e334b548b1aae1b8c547c8"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.45/mempool-space_dashboard-x86_64-apple-darwin.tar.xz"
+      sha256 "c367e0f58d8bb4fcb9c8cd38d0240670a8736912d5f745f79d8460486b438228"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.42/mempool-space_dashboard-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c7b7254a77124d43920b60979c45bb44547f9eee7d490e5c703c79f37b356e5a"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.45/mempool-space_dashboard-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8577499e73bba051b577a7c4de6fdd484ea30dcb2ad5430114228d15e8ef0b33"
     end
   end
   license "MIT"
 
-  BINARY_ALIASES = {"aarch64-apple-darwin": {}, "x86_64-apple-darwin": {}, "x86_64-unknown-linux-gnu": {}, "x86_64-unknown-linux-musl-dynamic": {}, "x86_64-unknown-linux-musl-static": {}}
+  BINARY_ALIASES = {"aarch64-apple-darwin": {}, "x86_64-apple-darwin": {}, "x86_64-pc-windows-gnu": {}, "x86_64-unknown-linux-gnu": {}, "x86_64-unknown-linux-musl-dynamic": {}, "x86_64-unknown-linux-musl-static": {}}
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
