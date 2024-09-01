@@ -1,26 +1,26 @@
 class MempoolSpace < Formula
   desc "mempool.space api interface."
   homepage "https://github.com/randymcmillan/mempool_space"
-  version "0.0.42"
+  version "0.0.45"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.42/mempool_space-aarch64-apple-darwin.tar.xz"
-      sha256 "5cf614ba4161c7337f88489ae90a8b3ad718fbeb1a59621bc1d7c02219b04b09"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.45/mempool_space-aarch64-apple-darwin.tar.xz"
+      sha256 "335e1b75cb92e5253d062ea4b08200580b6bdb9531061e10c1ec34902d4e550e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.42/mempool_space-x86_64-apple-darwin.tar.xz"
-      sha256 "e2f408836755ab6dee05b12fc834441678a25f81cb4d2e11dd165d9fcfaf8395"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.45/mempool_space-x86_64-apple-darwin.tar.xz"
+      sha256 "e96d1cd100c820dada56f92301e0e3d45471021428f05787e14c4b4c12bb5c69"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.42/mempool_space-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0543f473489a455fd5e5f80dad1025879a01346dbddb1853019389c79c485393"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.45/mempool_space-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a1997b33f262c2aebb2ace6874e414cd540f10fe51240da77b7c3680541990db"
     end
   end
   license "MIT"
 
-  BINARY_ALIASES = {"aarch64-apple-darwin": {}, "x86_64-apple-darwin": {}, "x86_64-unknown-linux-gnu": {}, "x86_64-unknown-linux-musl-dynamic": {}, "x86_64-unknown-linux-musl-static": {}}
+  BINARY_ALIASES = {"aarch64-apple-darwin": {}, "x86_64-apple-darwin": {}, "x86_64-pc-windows-gnu": {}, "x86_64-unknown-linux-gnu": {}, "x86_64-unknown-linux-musl-dynamic": {}, "x86_64-unknown-linux-musl-static": {}}
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
