@@ -1,21 +1,21 @@
 class LightningSearchDashboard < Formula
   desc "lightning-search <searchText>"
   homepage "https://github.com/randymcmillan/mempool_space.git"
-  version "0.0.50"
+  version "0.0.51"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.50/lightning-search_dashboard-aarch64-apple-darwin.tar.xz"
-      sha256 "e2a011d53e713fabbb2f22fb8fd2c6f5023501f1a4abdaaf47f9f8ccdf1e069c"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.51/lightning-search_dashboard-aarch64-apple-darwin.tar.xz"
+      sha256 "53adea61d787d70e1867ad3666d3d105d7d9858e5fa481cabb90b91ff81cc535"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.50/lightning-search_dashboard-x86_64-apple-darwin.tar.xz"
-      sha256 "53c73ec8c790eae9330975afb7be38cd67052a1f0415b70cfa1fae7b6e596f68"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.51/lightning-search_dashboard-x86_64-apple-darwin.tar.xz"
+      sha256 "11eaa78dacfc28dc0cb1bc552dcbf591ebdd1cabf76a0175a522d046910b22e7"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.50/lightning-search_dashboard-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "046a7f2370bf030d4ce09b2d59f694f0bee75149c126b6183101781242441be2"
+      url "https://github.com/randymcmillan/mempool_space/releases/download/v0.0.51/lightning-search_dashboard-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "efbd046754c4a11b946e1b46a52c2f2dc97f61a81cd61b89e34f95ce10916ff9"
     end
   end
   license "MIT"
