@@ -1,25 +1,25 @@
 class MakeJust < Formula
   desc "The make-just application"
   homepage "https://github.com/randymcmillan/make-just"
-  version "0.0.8"
+  version "0.0.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/make-just/releases/download/v0.0.8/make-just-aarch64-apple-darwin.tar.xz"
-      sha256 "3e71be9af5dba00396c52832597b97cc2eb9075525795978362818fb534b1487"
+      url "https://github.com/randymcmillan/make-just/releases/download/v0.0.9/make-just-aarch64-apple-darwin.tar.xz"
+      sha256 "25352109689f3a0646a8e6bee843aa8bdbfdad18e52fc4ce3d1a96bf8ce59e85"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/make-just/releases/download/v0.0.8/make-just-x86_64-apple-darwin.tar.xz"
-      sha256 "403fd8fbc3b264a18c3c02b784ab0a364cdaf8254a95fa20d96382b58e950514"
+      url "https://github.com/randymcmillan/make-just/releases/download/v0.0.9/make-just-x86_64-apple-darwin.tar.xz"
+      sha256 "6a03406d466b5ed2612b798b5094476c81d882b0e1cf8ad60487ddfaa2f9f8bc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/make-just/releases/download/v0.0.8/make-just-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3203a1a2c7d6bb3d1a8308b879fb6a718f06c905f373d0a81536611840dbcf5e"
+      url "https://github.com/randymcmillan/make-just/releases/download/v0.0.9/make-just-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c2d3b520fadb272162e9379ce733dbcad23c744cdd9893ed97d0b7e0ff02cb90"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/make-just/releases/download/v0.0.8/make-just-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e735d933fdf92c74a703904424bddbaf09d2d002f702b5e0ee6076386a5920c6"
+      url "https://github.com/randymcmillan/make-just/releases/download/v0.0.9/make-just-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2728a399d038b5194bf79e3dcbedf2c865892c7669867d4e2be2fe1f40914391"
     end
   end
 
