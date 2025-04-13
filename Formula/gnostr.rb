@@ -1,14 +1,14 @@
 class Gnostr < Formula
   desc "gnostr:a git+nostr workflow utility"
   homepage "https://github.com/gnostr-org/gnostr"
-  version "0.0.53"
+  version "0.0.55"
   if OS.mac?
-    url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.53/gnostr-x86_64-apple-darwin.tar.xz"
-    sha256 "403a5513b150932a196a58c3845c328ff696746023ff5f2298b81cc2e64e5787"
+    url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.55/gnostr-x86_64-apple-darwin.tar.xz"
+    sha256 "e0582b0cdc277b8233e34a54930e0b5f0fb947a26bcf1c1044a8ae429f46980a"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.53/gnostr-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "2dfe91d451b17adcc5d72dc8c09a5e5ad2825f94a2b2d02bd42264ed03f21568"
+    url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.55/gnostr-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "598e270f067ea3e388c1a99394a4d2f0bcff1ccf69e2a30618c70e4b5e7c4bdf"
   end
   license "MIT"
 
