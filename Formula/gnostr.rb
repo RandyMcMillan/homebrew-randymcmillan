@@ -5,16 +5,16 @@ class Gnostr < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.62/gnostr-aarch64-apple-darwin.tar.xz"
-      sha256 "19f04c48a54a016c4d44846e61bc6e268daa39f9ba7a5f76aa834f3d51dcfbe4"
+      sha256 "cbb73695024cf03ccb2cfec59fb6720aa7b980e1888afc860c198239d7b72055"
     end
     if Hardware::CPU.intel?
       url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.62/gnostr-x86_64-apple-darwin.tar.xz"
-      sha256 "86b1435dca230c66f2847464558dcb97df3f732f54d891f2e55951c7f448c64e"
+      sha256 "7078c17cd13608cc52e251bf47ae9ee2d81af02d7cdb62edce23573942c7d2c8"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.62/gnostr-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "4c395d1cea556c9914c6a9eae928a51c62dcc06033789a38635dc96f8a8658d1"
+    sha256 "e8350e7f17a6386c27212a7ca35945b9e8424f244e0fb5fd286db4968ef8c583"
   end
   license "MIT"
 
