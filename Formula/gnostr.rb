@@ -1,20 +1,20 @@
 class Gnostr < Formula
   desc "gnostr:a git+nostr workflow utility"
   homepage "https://github.com/gnostr-org/gnostr"
-  version "0.0.67"
+  version "0.0.69"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.67/gnostr-aarch64-apple-darwin.tar.xz"
-      sha256 "023dfcabca5687f6653c490f4b7ae174e88a5313b47258c2d4ebf625b6ec1fff"
+      url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.69/gnostr-aarch64-apple-darwin.tar.xz"
+      sha256 "e87fe8fba00179da3cd60d71d1e4ecd58422967ebd47644a0ee4af0fe41f4216"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.67/gnostr-x86_64-apple-darwin.tar.xz"
-      sha256 "2cb2a1a0074cd9faf6d0d44f6fe4c0ffc99753318541bbfeb6a6c6f3423989ad"
+      url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.69/gnostr-x86_64-apple-darwin.tar.xz"
+      sha256 "25eb9f3e9b6a313c7ef4e91c296ddcf0ad5907453a70b33eb2218354c8d19dc0"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.67/gnostr-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "39ab3c19a22e2103d54005c014ac8dd8efb5f38f4980bbc17c81d050f6f9c5e1"
+    url "https://github.com/gnostr-org/gnostr/releases/download/v0.0.69/gnostr-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "b40c778e963d971baad846f8aae697c8e15cb5f46224b29aff287a03ccaaef6b"
   end
   license "MIT"
 
@@ -41,9 +41,9 @@ class Gnostr < Formula
   end
 
   def install
-    bin.install "git_remote_nostr", "gnostr", "gnostr-chat", "gnostr-tui", "ngit" if OS.mac? && Hardware::CPU.arm?
-    bin.install "git_remote_nostr", "gnostr", "gnostr-chat", "gnostr-tui", "ngit" if OS.mac? && Hardware::CPU.intel?
-    bin.install "git_remote_nostr", "gnostr", "gnostr-chat", "gnostr-tui", "ngit" if OS.linux? && Hardware::CPU.intel?
+    bin.install "git_remote_nostr", "gnostr" if OS.mac? && Hardware::CPU.arm?
+    bin.install "git_remote_nostr", "gnostr" if OS.mac? && Hardware::CPU.intel?
+    bin.install "git_remote_nostr", "gnostr" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
