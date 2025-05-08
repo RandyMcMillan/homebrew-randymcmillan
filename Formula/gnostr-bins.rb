@@ -1,14 +1,19 @@
 class GnostrBins < Formula
   desc "gnostr: a git+nostr workflow utility"
   homepage "https://github.com/gnostr-org/gnostr-bins"
-  version "0.0.71"
+  version "0.0.72"
   if OS.mac?
-    url "https://github.com/gnostr-org/gnostr-bins/releases/download/v0.0.71/gnostr-bins-x86_64-apple-darwin.tar.xz"
-    sha256 "b285d059be2056245bcdc74d44bd9e341ee15255abef57cbb7ccc81486344108"
+    if Hardware::CPU.arm?
+      url "https://github.com/gnostr-org/gnostr-bins/releases/download/v0.0.72/gnostr-bins-aarch64-apple-darwin.tar.xz"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/gnostr-org/gnostr-bins/releases/download/v0.0.72/gnostr-bins-x86_64-apple-darwin.tar.xz"
+      sha256 "18dc994b94ea866354f20066f9597faf97c797e6642e06be6aa631a0fad5f2a3"
+    end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/gnostr-org/gnostr-bins/releases/download/v0.0.71/gnostr-bins-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "fda665174d3020ce79da1ca6eb78fbbdae5a61e1380ae7d3b0cf8ecbae99143b"
+    url "https://github.com/gnostr-org/gnostr-bins/releases/download/v0.0.72/gnostr-bins-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "4f6b9b46e0cd0af0e16bbe3da7437175acdab18ace4a014e5b661832fba03b68"
   end
   license "MIT"
 
