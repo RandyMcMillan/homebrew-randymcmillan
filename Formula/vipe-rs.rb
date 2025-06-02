@@ -1,20 +1,20 @@
 class VipeRs < Formula
   desc "Edit piped input in your editor"
   homepage "https://github.com/randymcmillan/vipe-rs"
-  version "0.0.7"
+  version "0.0.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/randymcmillan/vipe-rs/releases/download/v0.0.7/vipe-rs-aarch64-apple-darwin.tar.xz"
-      sha256 "8e06ab141c0520c29f723189783e3b55622bf9ffeaae0c8a8367cb06097c2923"
+      url "https://github.com/randymcmillan/vipe-rs/releases/download/v0.0.8/vipe-rs-aarch64-apple-darwin.tar.xz"
+      sha256 "6391f0bb2b689f4ce48b580c515a6aa34ea17c6f13ca0c22825b5ceb3c4ba6c8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/randymcmillan/vipe-rs/releases/download/v0.0.7/vipe-rs-x86_64-apple-darwin.tar.xz"
-      sha256 "6d2609f5d4f37be2fb371621193f89ed4e02cc04ed1b2f900a7fc8755d0fce1b"
+      url "https://github.com/randymcmillan/vipe-rs/releases/download/v0.0.8/vipe-rs-x86_64-apple-darwin.tar.xz"
+      sha256 "805e434f3addaa7b062659b523e86dfa8927afef10c3d9a504b1e9df3121b1b1"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/randymcmillan/vipe-rs/releases/download/v0.0.7/vipe-rs-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "e1574582da933768778a8938d2b3b9792692e175c6fdc35702c0ed67f1463ab9"
+    url "https://github.com/randymcmillan/vipe-rs/releases/download/v0.0.8/vipe-rs-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "bd0c78ab5ce13f67440e76d7580993bda20bf3871f82776f320979234dcd061b"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
