@@ -1,25 +1,25 @@
 class KuboRs < Formula
   desc "Rust bindings for Kubo (IPFS in Go) via CGO/FFI"
   homepage "https://github.com/RandyMcMillan/kubo-rs"
-  version "0.5.1"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RandyMcMillan/kubo-rs/releases/download/v0.5.1/kubo-rs-aarch64-apple-darwin.tar.xz"
-      sha256 "7a091bb290d158adaf061d75868ed4e07d9cff472106803192bca02cd19eec07"
+      url "https://github.com/RandyMcMillan/kubo-rs/releases/download/v0.6.0/kubo-rs-aarch64-apple-darwin.tar.xz"
+      sha256 "68a464b181d906cc67d74bfbc23dc73d87f7266214189924685c922418decd51"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandyMcMillan/kubo-rs/releases/download/v0.5.1/kubo-rs-x86_64-apple-darwin.tar.xz"
-      sha256 "c465c9f531c5f6b2564adafa75ca6f35a32b1e84445d4f75ca558c454cb91bdf"
+      url "https://github.com/RandyMcMillan/kubo-rs/releases/download/v0.6.0/kubo-rs-x86_64-apple-darwin.tar.xz"
+      sha256 "daa5cc9b4634eafd1924d5c5f7b58fc93d6ebae2e70d522c0e71941a25802656"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/RandyMcMillan/kubo-rs/releases/download/v0.5.1/kubo-rs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b687bc9c5cbd825e485c34ad7ace3427c5f08517d6dd257edfd7332fc7db368f"
+      url "https://github.com/RandyMcMillan/kubo-rs/releases/download/v0.6.0/kubo-rs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "84bb21254da4e510c36f35d70bf72c88afef44426a96721e2970d8c4ed96c25f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandyMcMillan/kubo-rs/releases/download/v0.5.1/kubo-rs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "03d70bea1c050d1a1d90d212df41792f912f9c9aec6f11c4c567bbd756272776"
+      url "https://github.com/RandyMcMillan/kubo-rs/releases/download/v0.6.0/kubo-rs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "113dab958ca3dec4da9fd6bff77507a81a5be316981a4e754f4c7c5651d48d5d"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
