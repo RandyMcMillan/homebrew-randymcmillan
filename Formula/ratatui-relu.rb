@@ -1,25 +1,25 @@
 class RatatuiRelu < Formula
   desc "Continuous, differentiable layout transitions for Ratatui"
   homepage "https://github.com/RandyMcMillan/ratatui-relu"
-  version "0.11.0"
+  version "0.12.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.11.0/ratatui-relu-aarch64-apple-darwin.tar.xz"
-      sha256 "f8aa98777f8614cfc210bd2a0b6bb5027e90d9eca3784cc6299c1afc0cf5d3b2"
+      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.12.0/ratatui-relu-aarch64-apple-darwin.tar.xz"
+      sha256 "a8337399b7adb4fe5646f15269933af9cc086e21b1c6c6ba753e48c81e9f5083"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.11.0/ratatui-relu-x86_64-apple-darwin.tar.xz"
-      sha256 "b8af9b68053bd916708119d8c28bf83fe1ad03fd4e1120cd72f261448d14a420"
+      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.12.0/ratatui-relu-x86_64-apple-darwin.tar.xz"
+      sha256 "a7fc6d58ee46ddfc3d598414003ca4ef954a781493e320bf6719ebcbd2bc12f7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.11.0/ratatui-relu-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f5bc3c4510b5e08c6cf82f39360d532bf6ccea0662e552704abb3474460069ec"
+      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.12.0/ratatui-relu-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "95547b9a5cd01f2b64d03716f25050b12cffac08dec7008202a9215b861759b8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.11.0/ratatui-relu-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2775b27e7227e072503e24379ae337ecd5593cc7c72990d6643b711ec466061c"
+      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.12.0/ratatui-relu-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2097d14624ab48a9bcaf5638b9bd2ac5dd7028e3a0dac8258e6c79bef8f4aeb3"
     end
   end
 
