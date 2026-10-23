@@ -1,25 +1,25 @@
 class RatatuiRelu < Formula
   desc "Continuous, differentiable layout transitions for Ratatui"
   homepage "https://github.com/RandyMcMillan/ratatui-relu"
-  version "0.12.0"
+  version "0.13.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.12.0/ratatui-relu-aarch64-apple-darwin.tar.xz"
-      sha256 "a8337399b7adb4fe5646f15269933af9cc086e21b1c6c6ba753e48c81e9f5083"
+      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.13.0/ratatui-relu-aarch64-apple-darwin.tar.xz"
+      sha256 "145167891ceb04d1e58758ce8b3256939673dd10ea89c0aa9dfc8acbb35390ee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.12.0/ratatui-relu-x86_64-apple-darwin.tar.xz"
-      sha256 "a7fc6d58ee46ddfc3d598414003ca4ef954a781493e320bf6719ebcbd2bc12f7"
+      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.13.0/ratatui-relu-x86_64-apple-darwin.tar.xz"
+      sha256 "7d3cec2b256a137b1cb3ca4219f111128208a7a21d17b9380d4fe1db35358ad8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.12.0/ratatui-relu-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "95547b9a5cd01f2b64d03716f25050b12cffac08dec7008202a9215b861759b8"
+      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.13.0/ratatui-relu-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1f6cce2cf394c7d93ce648e2964cebc1bc9adf8ce480493ec3cbbdf09a133dfc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.12.0/ratatui-relu-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2097d14624ab48a9bcaf5638b9bd2ac5dd7028e3a0dac8258e6c79bef8f4aeb3"
+      url "https://github.com/RandyMcMillan/ratatui-relu/releases/download/v0.13.0/ratatui-relu-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "13d72e3a4f1aca0818b75b959c8af9f8bcbb2f5b023186c3bf015e5a00d2f084"
     end
   end
 
